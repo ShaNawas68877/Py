@@ -1,0 +1,11 @@
+pip installed
+
+pyPDF2
+textract
+nltk
+tabula
+camelot
+
+Pandas - to convert df to excel
+
+tablib - json to excel

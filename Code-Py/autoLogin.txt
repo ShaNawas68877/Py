@@ -1,0 +1,20 @@
+def dev(a,b):
+    from selenium import webdriver
+    import time
+    driver = webdriver.Firefox()
+
+    driver.get("https://signon.service-now.com/ssologin.do?RelayState=%252Fapp%252Fservicenow_ud%252Fexks6phcbx6R8qjln0x7%252Fsso%252Fsaml%253FRelayState%253Dhttps%25253A%25252F%25252Fdeveloper.servicenow.com%25252Fdev.do&redirectUri=&email=")
+
+    time.sleep(8)
+
+    button = driver.find_element_by_id("username").send_keys(a)
+    time.sleep(2)
+    button2 = driver.find_element_by_id("usernameSubmitButton")
+    button2.click()
+    time.sleep(2)
+    button3 = driver.find_element_by_id("password").send_keys(b)
+    time.sleep(2)
+    button4 = driver.find_element_by_id("submitButton")
+    button4.click()
+
+dev("pavithra.srinivasan6@cognizant.com","Alphabet#1997")
